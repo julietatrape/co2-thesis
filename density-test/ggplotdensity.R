@@ -2,9 +2,9 @@ library(ggplot2)
 library(dplyr)
 
 # Read experimental data at 303, 333 and 373 K
-Exp303 <- read.delim("~/Escritorio/Tesis/Figuras/Test de densidad/Exp-303.15K", header=T)
-Exp333 <- read.delim("~/Escritorio/Tesis/Figuras/Test de densidad/Exp-333.15K", header=T)
-Exp373 <- read.delim("~/Escritorio/Tesis/Figuras/Test de densidad/Exp-373.15K", header=T)
+Exp303 <- read.delim("Exp-303.15K", header=T)
+Exp333 <- read.delim("Exp-333.15K", header=T)
+Exp373 <- read.delim("Exp-373.15K", header=T)
 
 # Divide each experimental data set in the different phases of CO2
 Exp303_vapor <- filter(Exp303, Phase=='vapor')
@@ -15,9 +15,9 @@ Exp373_vapor <- filter(Exp373, Phase=='vapor')
 Exp373_supercritical <- filter(Exp373, Phase=='supercritical')
 
 # Read simulations data at 303, 333 and 373 K
-Sim303 <- read.delim("~/Escritorio/Tesis/Figuras/Test de densidad/Sim-303.15K", header=T)
-Sim333 <- read.delim("~/Escritorio/Tesis/Figuras/Test de densidad/Sim-333.15K", header=T)
-Sim373 <- read.delim("~/Escritorio/Tesis/Figuras/Test de densidad/Sim-373.15K", header=T)
+Sim303 <- read.delim("Sim-303.15K", header=T)
+Sim333 <- read.delim("Sim-333.15K", header=T)
+Sim373 <- read.delim("Sim-373.15K", header=T)
 
 # Divide each simulation data set in the different potentials used for CO2 (TraPPE and Neural Networks)
 Sim303_TraPPE <- filter(Sim303, Potencial=='TraPPE')
