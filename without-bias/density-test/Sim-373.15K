@@ -1,0 +1,10 @@
+Potencial	Presion (bar)	Densidad (kg/m3)	Desviacion estandar (kg/m3)	Error (%)
+TraPPE	100	185.64	1.74	1.55
+TraPPE	300	667.66	16.09	0.87
+TraPPE	600	830.18	17.14	4.02
+TraPPE	1000	954.1	16.5	2,.92
+NN	100	979.9	12.7	419.67
+NN	300	986.1	13.0	48.99
+NN	600	999.5	13.6	15.56
+NN	1000	1005.7	12.3	2,33
+
